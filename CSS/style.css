@@ -35,3 +35,32 @@
     padding: 1%;
     vertical-align: top
 }
+<!-- My UX Skills section coded using CSS flex-->
+.flexContainer {
+    display: flex;
+    width: 33%;
+    padding: 2%;
+    margin: 0 auto;
+}
+<!--My Work Section Constructed using CSS Grid-->
+.workGrid {
+    margin: 0px 5%;
+    display: grid;
+    grid-template-rows: 300px 300px 300px;
+    grid-template-columns: 1ft 1fr 1fr;
+    grid-template-areas:
+    "Wandr Hap* Habitate for Humanity"
+    ;
+}
+@media only screen and (max-width:600) {
+    .workGrid {
+        grid-template-rows: 300px 300px 300px
+        300px 300px;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "Wandr"
+        "Hap*"
+        "Habitat for Humanity"
+        ;
+    }
+}
